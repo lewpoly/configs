@@ -1,0 +1,6 @@
+#wal -R &
+nitrogen --restore &
+nm-applet &
+blueman-applet &
+picom -b &
+xbindkeys
