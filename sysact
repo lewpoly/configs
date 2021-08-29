@@ -1,0 +1,10 @@
+
+#!/bin/sh
+
+CHOICE=$(printf '%s\n' "Poweroff" "Reboot" "鈴Sleep" | dmenu -c -l 3 -p :)
+
+case "$CHOICE" in 
+	Poweroff) systemctl poweroff ;;
+	Reboot) systemctl reboot ;;
+	鈴Sleep) systemctl suspend ;;
+esac
