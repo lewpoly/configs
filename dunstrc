@@ -17,7 +17,7 @@
     #
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
-    follow = keyboard
+    follow = none
 
     ### Geometry ###
 
@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 20x40
+    offset = 5x25
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -68,7 +68,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 30
+    transparency = 20
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -76,20 +76,20 @@
     separator_height = 2
 
     # Padding between text and separator.
-    padding = 8
+    padding = 12
 
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 14
 
     # Padding between text and icon.
-    text_icon_padding = 0
+    text_icon_padding = 20
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
     frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#5c6370"
+    frame_color = "#232731"
 
     # Define a color for the separator.
     # possible values are:
@@ -97,7 +97,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = auto
+    separator_color = frame
 
     # Sort messages by urgency.
     sort = yes
@@ -193,10 +193,10 @@
     min_icon_size = 0
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 72
+    max_icon_size = 125
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/Paper/16x16/status/:/usr/share/Paper/gnome/16x16/devices/
+    icon_path = /usr/share/icons/gnome/32x32/devices/:/usr/share/icons/gnome/32x32/status/
 
     ### History ###
 
@@ -213,7 +213,7 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/brave -new-tab
+    browser = /usr/bin/brave --new-tab
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -292,18 +292,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#232731"
-    foreground = "#e5e9f0"
+    background = "#0d1117"
+    foreground = "#ffffff"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
-    #default_icon = /path/to/icon
+    # default_icon = /home/lew/.local/share/icons/fontawesome/svgs/regular/bell.svg
 
 [urgency_normal]
-    background = "#000000"
+    background = "#0d1117"
     foreground = "#ffffff"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
-    #default_icon = /path/to/icon
+    # default_icon = /home/lew/.local/share/icons/fontawesome/svgs/solid/bell.svg
 
 [urgency_critical]
     background = "#900000"
